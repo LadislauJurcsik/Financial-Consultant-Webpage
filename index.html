@@ -1,0 +1,590 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Webpage with HTML, CSS, bootstrap and a bit of javascript</title>
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@700&display=swap" rel="stylesheet">
+
+    <!-- Library -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css"
+        integrity="sha512-1cK78a1o+ht2JcaW6g8OXYwqpev9+6GqOkz9xmBN9iUUhIndKtxwILGWYOSibOKjLsEdjyjZvYDq/cZwNeak0w=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.2.3/css/bootstrap.min.css"
+        integrity="sha512-SbiR/eusphKoMVVXysTKG/7VseWii+Y3FdHrt0EpKgpToZeemhqHeZeLWLhJutz/2ut2Vw1uQEj2MbRF+TVBUA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-icons/1.10.4/font/bootstrap-icons.min.css"
+        integrity="sha512-yU7+yXTc4VUanLSjkZq+buQN3afNA4j2ap/mxvdr440P5aW9np9vIr2JMZ2E5DuYeC9bAoH9CuCR7SJlXAa4pg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/boxicons/2.1.4/css/boxicons.min.css"
+        integrity="sha512-cn16Qw8mzTBKpu08X0fwhTSv02kK/FojjNLz0bwp2xJ4H+yalwzXKFw/5cLzuBZCxGWIA+95X4skzvo8STNtSg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/glightbox/3.2.0/css/glightbox.min.css"
+        integrity="sha512-T+KoG3fbDoSnlgEXFQqwcTC9AdkFIxhBlmoaFqYaIjq2ShhNwNao9AKaLUPMfwiBPL0ScxAtc+UYbHAgvd+sjQ=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/3.2.0/remixicon.min.css"
+        integrity="sha512-GnKwJshx9tNlW9S66QP0468D9rP87ncTdWOjWGibDaTR7XuN0x6Wq5HDAG0hNYf8QtW+keURtN6jqnUWskV7bA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/9.2.4/swiper-bundle.min.css"
+        integrity="sha512-qKRrPbwf0yKAsKZGGfiNjmd66a7GtkLhLqTqH9boYbDPgUQmDw0mGXfC3HlkbEFEw3HjNmSaS9SR/d07ZXOUVw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <link rel="stylesheet" href="assets/css/style.css">
+</head>
+
+<body>
+
+    <!-- =============== Header =============== -->
+    <header id="header" class="fixed-top">
+        <div class="container d-flex align-item-center justify-content-lg-between">
+            <h1 class="logo me-auto me-lg-0">
+                <a href="">Consultant financiar - Jurcsik Ladislau</a>
+            </h1>
+            <nav id="navbar" class="navbar order-last order-lg-0">
+                <ul>
+                    <li><a class="nav-link scrollto active" href="#hero">Acasă</a></li>
+                    <li><a class="nav-link scrollto" href="#about">Despre</a></li>
+                    <li><a class="nav-link scrollto" href="#services">Servicii</a></li>
+                    <li><a class="nav-link scrollto" href="#portfolio">Portofoliu</a></li>
+                    <li><a class="nav-link scrollto" href="#team">Echipă</a></li>
+                    <li><a class="nav-link scrollto" href="#contact">Contact</a></li>
+                </ul>
+                <i class="bi bi-list mobile-nav-toggle"></i>
+            </nav>
+            <a href="#about" class="get-started-btn scrollto">Să începem</a>
+        </div>
+    </header>
+    <!-- =============== End Header =============== -->
+
+    <!-- =============== Hero Section =============== -->
+
+    <section id="hero" class="d-flex align-items-center justify-content-center">
+        <div class="container" data-aos="fade-up">
+
+            <div class="row justify-content-center" data-aos="fade-up" data-aos-delay="150">
+                <div class="col-xl-6 col-lg-8">
+                    <h1>Cu ajutorul  meu și al colegilor mei, îți vei putea îndeplinii obiectivele financiare</h1>
+                    <h2>Suntem dornici de a te ajuta să reușești ce ți-ai propus</h2>
+                </div>
+            </div>
+
+            <div class="row gy-4 mt-5 justify-content-center" data-aos="zoom-in" data-aos-delay="250">
+                <div class="col-xl-2 col-md-4">
+                    <div class="icon-box">
+                        <i class="ri-store-line"></i>
+                        <h3><a href="">Profesionalism</a></h3>
+                    </div>
+                </div>
+                <div class="col-xl-2 col-md-4">
+                    <div class="icon-box">
+                        <i class="ri-bar-chart-box-line"></i>
+                        <h3><a href="">Lucrăm cu date factuale</a></h3>
+                    </div>
+                </div>
+                <div class="col-xl-2 col-md-4">
+                    <div class="icon-box">
+                        <i class="ri-calendar-todo-line"></i>
+                        <h3><a href="">Programează o întâlnire</a></h3>
+                    </div>
+                </div>
+                <div class="col-xl-2 col-md-4">
+                    <div class="icon-box">
+                        <i class="ri-paint-brush-line"></i>
+                        <h3><a href="">O nouă identitate</a></h3>
+                    </div>
+                </div>
+                <div class="col-xl-2 col-md-4">
+                    <div class="icon-box">
+                        <i class="ri-database-2-line"></i>
+
+                        <h3><a href="">Economisire garantată</a></h3>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </section>
+    <!-- =============== END Hero Section =============== -->
+
+    <main id="main">
+
+        <section id="about" class="about">
+            <div class="container" data-aos="fade-up">
+                <div class="row">
+                    <div class="col-lg-6 pt-4 order-1 order-lg-2" data-aos="fade-left" data-aos-delay="100">
+                        <img src="assets/img/about.jpg" alt="" class="img-fluid">
+                    </div>
+                    <div class="col-lg-6 pt-4 order-2 pt-lg-0 order-lg-1 content" data-aos="fade-right"
+                        data-aos-delay="100">
+                        <h3>De când te chinuiești să economisești bani pentru a-ți îndeplinii dorințele?</h3>
+                        <p class="fst-italic">7 din 10 români nu au o rutină de economisire şi pun bani deoparte aleatoriu; economiile lunare medii sunt de 58 euro în România.
+                        </p>
+                        <ul>
+                            <li>
+                                <i class="ri-check-double-line"></i>
+                                consideri că 58 de euro pe lună îți sunt îndeajus pentru dorințele tale?
+                            </li>
+                            <li>
+                                <i class="ri-check-double-line"></i>
+                                58 de euro sau 285 de lei aproximativ costă un abonament la sală sau o pereche de adidași calitate medie
+                            </li>
+                            <li>
+                                <i class="ri-check-double-line"></i>
+                                trebuie să ne creștem veniturile sau să ajustăm cheltuielile pentru a reuși
+                            </li>
+                        </ul>
+                        <p>
+                            Tot nu te-am convins de ce e bine să economisești? Mai jos îți vom detalia de ce ar trebui să faci asta 
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+
+        <!-- ================= Features Section ===================== -->
+        <section id="features" class="features">
+            <div class="container" data-aos="fade-up">
+                <div class="row">
+                    <div style='background-image: url("assets/img/features.jpg");' class="image col-lg-6"
+                        data-aos="fade-right">
+
+                    </div>
+                    <div class="col-lg-6" data-aos="fade-left" data-aos-delay="100">
+                        <div class="icon-box mt-5 mt-lg-0" data-aos="zoom-in" data-aos-delay="150">
+                            <i class="bx bx-receipt"></i>
+                            <h4>Notând, vei ști unde îți pleacă banii lună de lună</h4>
+                            <p>Cu ajutorul unei aplicații sau unui simplu carnețel, prin simpla notare a tuturor cheltuielilor pe diferite categorii, respectiv notarea tuturor surselor de venit o să putem optimiza unde este nevoie, elimina dorințele care nu oferă un grad înalt de satisfacție, respectiv stabili de plan de creștere a veniturilor.</p>
+                        </div>
+                        <div class="icon-box mt-5 mt-lg-0" data-aos="zoom-in" data-aos-delay="150">
+                            <i class="bx bx-cube-alt"></i>
+                            <h4>Tu trebuie să dai o direcție banilor tăi</h4>
+                            <p>Dacă nu îți controlezi tu banii, îi vor controla alții pentru tine. Banii pot fi un slujior bun, dar un stăpân rău. Dacă reușești să controlezi și să gestionezi câteva mii de lei, nu vei reuși să gestionezi corect sume mai mari de bani.</p>
+                        </div>
+                        <div class="icon-box mt-5 mt-lg-0" data-aos="zoom-in" data-aos-delay="150">
+                            <i class="bx bx-image"></i>
+                            <h4>Îți vei face o imagine de ansamplu</h4>
+                            <p>Urmând cei doi pași de mai sus, vei putea observa dacă există anumite obiceiuri care duc la întreptarea sumelor respective spre diferite zone.</p>
+                        </div>
+                        <div class="icon-box mt-5 mt-lg-0" data-aos="zoom-in" data-aos-delay="150">
+                            <i class="bx bx-shield"></i>
+                            <h4>Siguranță</h4>
+                            <p>Prin adoptarea pașilor de mai sus, economisind, vei avea o anumită siguranță. Dacă ți se sparge iPhone-ul, ai bani de altul.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+
+        <!-- ========== Services ================ -->
+        <section id="services" class="services">
+            <div class="container" data-aos="fade-up">
+                <div class="section-title">
+                    <h2>Servicii</h2>
+                    <p>Ce servicii oferim</p>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-lg-4 col-md-6 d-flex align-items-stretch mt-4" data-aos="zoom-in" data-aos-delay="100">
+                    <div class="icon-box">
+                        <div class="icon">
+                            <i class="bx bx-dribble"></i>
+                        </div>
+
+                        <h4><a href="">Consultanță</a></h4>
+                        <p>Oferim o ședință de consultanță gratuită de 30 de min pentru a stabili de ce aveți nevoie.</p>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 d-flex align-items-stretch mt-4" data-aos="zoom-in" data-aos-delay="100">
+                    <div class="icon-box">
+                        <div class="icon">
+                            <i class="bx bx-file"></i>
+                        </div>
+
+                        <h4><a href="">Consultanță scrisă</a></h4>
+                        <p>Dacă sunteți o persoană timidă, ne putem conecta pe diferite rețele de socializare, respectiv email pentru a discuta.</p>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 d-flex align-items-stretch mt-4 " data-aos="zoom-in" data-aos-delay="100">
+                    <div class="icon-box">
+                        <div class="icon">
+                            <i class="bx bx-tachometer"></i>
+                        </div>
+                        <h4><a href="">Promptitudine</a></h4>
+                        <p>Echipa noastră vă stă la dispoziție 24/7.</p>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 d-flex align-items-stretch mt-4 " data-aos="zoom-in" data-aos-delay="100">
+                    <div class="icon-box">
+                        <div class="icon">
+                            <i class="bx bx-world"></i>
+                        </div>
+
+                        <h4><a href="">Consultanță online</a></h4>
+                        <p>Indiferent în care parte a globului vă aflați, noi vă stăm la dispoziție pentru suport, prin Zoom/Meet.</p>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 d-flex align-items-stretch mt-4 " data-aos="zoom-in" data-aos-delay="100">
+                    <div class="icon-box">
+                        <div class="icon">
+                            <i class="bx bx-slideshow"></i>
+                        </div>
+
+                        <h4><a href="">Lecții video</a></h4>
+                        <p>Dacă nu aveți timpul necesar, vă putem pune la dispoziție resurse video, pe care le puteți urmări când doriți.</p>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 d-flex align-items-stretch mt-4 " data-aos="zoom-in" data-aos-delay="100">
+                    <div class="icon-box">
+                        <div class="icon">
+                            <i class="bx bx-arch"></i>
+                        </div>
+                        <h4><a href="">Sprijin</a></h4>
+                        <p>Suntem aici pentru a vă ajuta, indiferent ce probleme financiare aveți.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+
+        <!-- =============CTA Action ==================== -->
+        <section id="cta" class="cta">
+            <div class="container" data-aos="zoom-in">
+                <div class="text-center">
+                    <h3>Gata de treabă</h3>
+                    <p>Hai alături de noi în această călătorie plină de aventuri.</p>
+                    <a href="#" class="cta-btn">Să înceapă acțiunea!</a>
+                </div>
+            </div>
+        </section>
+
+
+        <!-- ======================= Counts Section  ========================= -->
+        <section id="counts" class="counts">
+            <div class="container" data-aos="fade-up">
+                <div class="row no-gutters">
+                    <div data-aos-delay="100" data-aos="fade-right"
+                        class="image col-xl-5 d-flex align-items-stretch justify-content-center justify-content-lg-center">
+                    </div>
+
+                    <div class="col-xl-7 ps-0 ps-lg-5 pe-lg-1 d-flex align-items-stretch" data-aos="fade-left"
+                        data-aos-delay="100">
+                        <div class="content d-flex flex-column justify-content-center">
+                            <h3>De ce ar trebui să incepi alături de noi</h3>
+                            <p>Datele de mai jos îți vor arăta de ce suntem cei mai în măsură să te ajutăm</p>
+                            <div class="row">
+                                <div class="col-md-6 d-md-flex align-items-md-stretch">
+                                    <div class="count-box">
+                                        <i class="bi bi-emoji-smile"></i>
+                                        <span data-purecounter-start="0" data-purecounter-end="365"
+                                            data-purecounter-duration="2" class="purecounter"></span>
+                                        <p><strong>de persoane ajutate de noi </strong> care au început procesul</p>
+                                    </div>
+                                </div>
+                                <div class="col-md-6 d-md-flex align-items-md-stretch">
+                                    <div class="count-box">
+                                        <i class="bi bi-journal-richtext"></i>
+                                        <span data-purecounter-start="0" data-purecounter-end="350"
+                                            data-purecounter-duration="2" class="purecounter"></span>
+                                        <p><strong>Au reușit</strong> să înceapă să pună bani deoparte</p>
+                                    </div>
+                                </div>
+                                <div class="col-md-6 d-md-flex align-items-md-stretch">
+                                    <div class="count-box">
+                                        <i class="bi bi-clock"></i>
+                                        <span data-purecounter-start="0" data-purecounter-end="5000"
+                                            data-purecounter-duration="2" class="purecounter"></span>
+                                        <p><strong>De ore </strong>petrecute alături de clienții noștri</p>
+                                    </div>
+                                </div>
+
+                                <div class="col-md-6 d-md-flex align-items-md-stretch">
+                                    <div class="count-box">
+                                        <i class="bi bi-award"></i>
+                                        <span data-purecounter-start="0" data-purecounter-end="324"
+                                            data-purecounter-duration="2" class="purecounter"></span>
+                                        <p><strong>Dintre ei </strong>recomandă programul nostru</p>
+                                    </div>
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ========================== Testimonials Section ============================== -->
+        <section id="testimonials" class="testimonials">
+            <div class="container" data-aos="zoom-in">
+                <div class="testimonials-slider swiper" data-aos="fade-up" data-aos-delay="100">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide">
+                            <div class="testimonials-item">
+                                <img src="assets/img/testimonials/testimonials-1.jpg" class="testimonials-img" alt="">
+                                <h3>Jurcsik Ladislau</h3>
+                                <h4>CEO &amp; fondator</h4>
+                                <p>
+                                    <i class="bx bxs-quote-alt-left quote-icon-left"></i>
+                                    Scopul meu și al echipei mele este de da ajuta cât mai mulți români.
+                                    <i class="bx bxs-quote-alt-right quote-icon-right"></i>
+                                </p>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="testimonials-item">
+                                <img src="assets/img/testimonials/testimonials-2.jpg" class="testimonials-img" alt="">
+                                <h3>Daniela Hebristean</h3>
+                                <h4>Co-fondator</h4>
+                                <p>
+                                    <i class="bx bxs-quote-alt-left quite-icon-left"></i>
+                                    Atât eu, cât și Ladislau, precum și ceilalți membrii, ne dorim să educăm cât mai multe persoane
+                                    <i class="bx bxs-quote-alt-right quote-icon-right"></i>
+                                </p>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="testimonials-item">
+                                <img src="assets/img/testimonials/testimonials-3.jpg" class="testimonials-img" alt="">
+                                <h3>Liviu Dragnea</h3>
+                                <h4>Asociat</h4>
+                                <p>
+                                    <i class="bx bxs-quote-alt-left quite-icon-left"></i>
+                                     Ajut la dezvoltarea acestei minunate comunități
+                                    <i class="bx bxs-quote-alt-right quote-icon-right"></i>
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+        </section>
+
+        <section id="team" class="team">
+            <div class="container" data-aos="fade-up">
+                <div class="section-title">
+                    <h2>Echipa</h2>
+                    <p>Ceilalți colegi</p>
+                </div>
+
+                <div class="row">
+                    <div class="col-lg-3 col-md-6 d-flex align-items-stretch">
+                        <div class="member" data-aos="fade-up" data-aos-delay="100">
+                            <div class="member-img">
+                                <img src="assets/img/team/team-1.jpg" class="img-fluid" alt="">
+                                <div class="social">
+                                    <a href=""><i class="bi bi-twitter"></i></a>
+                                    <a href=""><i class="bi bi-facebook"></i></a>
+                                    <a href=""><i class="bi bi-instagram"></i></a>
+                                    <a href=""><i class="bi bi-linkedin"></i></a>
+                                </div>
+                            </div>
+                            <div class="member-info">
+                                <h4>Chris Moneymaker</h4>
+                                <span>Director de marketing</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-6 d-flex align-items-stretch">
+                        <div class="member" data-aos="fade-up" data-aos-delay="100">
+                            <div class="member-img">
+                                <img src="assets/img/team/team-2.jpg" class="img-fluid" alt="">
+                                <div class="social">
+                                    <a href=""><i class="bi bi-twitter"></i></a>
+                                    <a href=""><i class="bi bi-facebook"></i></a>
+                                    <a href=""><i class="bi bi-instagram"></i></a>
+                                    <a href=""><i class="bi bi-linkedin"></i></a>
+                                </div>
+                            </div>
+                            <div class="member-info">
+                                <h4>Kelly Dabanii</h4>
+                                <span>Team Leader</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-6 d-flex align-items-stretch">
+                        <div class="member" data-aos="fade-up" data-aos-delay="100">
+                            <div class="member-img">
+                                <img src="assets/img/team/team-3.jpg" class="img-fluid" alt="">
+                                <div class="social">
+                                    <a href=""><i class="bi bi-twitter"></i></a>
+                                    <a href=""><i class="bi bi-facebook"></i></a>
+                                    <a href=""><i class="bi bi-instagram"></i></a>
+                                    <a href=""><i class="bi bi-linkedin"></i></a>
+                                </div>
+                            </div>
+                            <div class="member-info">
+                                <h4>Daniel Onlycash</h4>
+                                <span>Contabil șef</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-6 d-flex align-items-stretch">
+                        <div class="member" data-aos="fade-up" data-aos-delay="100">
+                            <div class="member-img">
+                                <img src="assets/img/team/team-4.jpg" class="img-fluid" alt="">
+                                <div class="social">
+                                    <a href=""><i class="bi bi-twitter"></i></a>
+                                    <a href=""><i class="bi bi-facebook"></i></a>
+                                    <a href=""><i class="bi bi-instagram"></i></a>
+                                    <a href=""><i class="bi bi-linkedin"></i></a>
+                                </div>
+                            </div>
+                            <div class="member-info">
+                                <h4>Mirela Vaidanambani</h4>
+                                <span>Suport tehnic</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ==================== Contact Section ============================ -->
+        <section id="contact" class="contact">
+            <div class="container" data-aos="fade-up">
+                <div class="section-title">
+                    <h2>Contact</h2>
+                    <p>Contactați-ne</p>
+                </div>
+
+                <div>
+                    <iframe
+                        style="border: 0; width: 100%; height: 270px;"
+                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d47192.90252513336!2d-71.05834628637693!3d42.33065926038158!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89e3652d0d3d311b%3A0x787cbf240162e8a0!2sBoston%2C%20MA%2C%20USA!5e0!3m2!1sen!2ssg!4v1682292997130!5m2!1sen!2ssg"
+                         allowfullscreen="" loading="lazy"
+                        referrerpolicy="no-referrer-when-downgrade"></iframe>
+                </div>
+
+            </div>
+        </section>
+
+    </main>
+
+
+    <footer id="footer">
+        <div class="footer-top">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-3 col-md-6">
+                        <div class="footer-info">
+                            <h3>Consultant financiar - Jurcsik Ladislau</h3>
+                            <p>
+                                Strada Stejarului, bloc 43 <br>
+                                Florești, Cluj <br><br>
+                                <strong>Telefon: </strong>+4032778940<br>
+                                <strong>Email: </strong>ladislau.jurcsik@gmail.com<br>
+                            </p>
+                            <div class="social-links mt-3">
+                                <a href="" class="twitter"><i class="bx bxl-twitter"></i></a>
+                                <a href="" class="facebook"><i class="bx bxl-facebook"></i></a>
+                                <a href="" class="instagram"><i class="bx bxl-instagram"></i></a>
+                                <a href="" class="linkedin"><i class="bx bxl-linkedin"></i></a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-2 col-md-6 footer-links">
+                        <h4>Secțiuni ajutătoare</h4>
+                        <ul>
+                            <li><i class="bx bx-chevron-right"></i>
+                                <a href="">Acasă</a>
+                            </li>
+                            <li><i class="bx bx-chevron-right"></i>
+                                <a href="">Despre noi</a>
+                            </li>
+                            <li><i class="bx bx-chevron-right"></i>
+                                <a href="">Servicii</a>
+                            </li>
+                            <li><i class="bx bx-chevron-right"></i>
+                                <a href="">Termeni și condiții</a>
+                            </li>
+                            <li><i class="bx bx-chevron-right"></i>
+                                <a href="">Politici</a>
+                            </li>
+                        </ul>
+                    </div>
+
+                    <div class="col-lg-3 col-md-6 footer-links">
+                        <h4>Servicile noastre</h4>
+                        <ul>
+                            <li>
+                                <i class="bx bx-chevron-right"></i>
+                                <a href="">Consultanță financiară</a>
+                            </li>
+                            <li>
+                                <i class="bx bx-chevron-right"></i>
+                                <a href="">Coaching</a>
+                            </li>
+                            <li>
+                                <i class="bx bx-chevron-right"></i>
+                                <a href="">Mentorat</a>
+                            </li>
+                            <li>
+                                <i class="bx bx-chevron-right"></i>
+                                <a href="">Public speaking</a>
+                            </li>
+                            <li>
+                                <i class="bx bx-chevron-right"></i>
+                                <a href="">Ghid </a>
+                            </li>
+                        </ul>
+                    </div>
+
+                    <div class="col-lg-4 col-md-6 footer-newsletter">
+                        <h4>Newsletter-ul nostru</h4>
+                        <p>Săptămânal cu tips&trick despre economisire</p>
+                        <form action="">
+                            <input type="email">
+                            <input type="submit" value="Abonați-vă">
+                        </form>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="container">
+            <div class="copyrigh">
+                Copyright <strong><span>Consultant financiar - Ladislau Jurcsik</span></strong> Toare drepturile rezervate
+            </div>
+        </div>
+    </footer>
+
+    <div id="preloader"></div>
+
+
+
+
+
+
+
+
+    <script src="https://cdn.jsdelivr.net/npm/@srexi/purecounterjs/dist/purecounter_vanilla.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"
+        integrity="sha512-A7AYk1fGKX6S2SsHywmPkrnzTZHrgiVT7GcQkLGDe2ev0aWb8zejytzS8wjo7PGEXKqJOrjQ4oORtnimIRZBtw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.2.3/js/bootstrap.min.js"
+        integrity="sha512-1/RvZTcCDEUjY/CypiMz+iqqtaoQfAITmNSJY17Myp4Ms5mdxPS5UV7iOfdZoxcGhzFbOm6sntTKJppjvuhg4g=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/glightbox/3.2.0/js/glightbox.min.js"
+        integrity="sha512-S/H9RQ6govCzeA7F9D0m8NGfsGf0/HjJEiLEfWGaMCjFzavo+DkRbYtZLSO+X6cZsIKQ6JvV/7Y9YMaYnSGnAA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.isotope/3.0.6/isotope.pkgd.min.js"
+        integrity="sha512-Zq2BOxyhvnRFXu0+WE6ojpZLOU2jdnqbrM1hmVdGzyeCa1DgM3X5Q4A/Is9xA1IkbUeDd7755dNNI/PzSf2Pew=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/9.2.4/swiper-bundle.min.js"
+        integrity="sha512-hJrV+LKHbu+Hxkn/+ZwGOCMUkap0ZfjJbca9WT38z69+MYmRzMlvUd401TOs1b4byAm4fGDESpEcCbG2A6cibQ=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+    <script src="assets/js/script.js"></script>
+</body>
+
+</html>
